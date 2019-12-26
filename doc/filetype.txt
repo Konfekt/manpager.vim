@@ -1,0 +1,17 @@
+MANPAGER				      *manpager.vim*
+
+The :Man command allows you to turn Vim into a manpager (that syntax highlights
+    manpages and follows linked manpages on hitting CTRL-]).
+
+For bash,zsh,ksh or dash, add to the config file (.bashrc,.zshrc, ...)
+
+	export MANPAGER="vim -M +MANPAGER -"
+
+  For (t)csh, add to the config file
+
+	setenv MANPAGER "vim -M +MANPAGER -"
+
+  For fish, add to the config file
+
+	set -x MANPAGER "vim -M +MANPAGER -"
+
